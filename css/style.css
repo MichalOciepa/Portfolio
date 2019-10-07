@@ -347,10 +347,14 @@ a {
     nav.desktop {
         display: none;
     }
+<<<<<<< HEAD
 
     .mobile {
         display: block;
     }
+=======
+nav.mobile {display:flex;}
+>>>>>>> 6f62f60a37a8839a1b0011f72c08e134c765e1bc
 }
 
 @media (min-width: 576px) {
