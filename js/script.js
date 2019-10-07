@@ -1,6 +1,6 @@
 //Menu slider
 const burger = document.querySelector(".fa-bars");
-const slideMenu = document.querySelector("nav");
+const slideMenu = document.querySelector(".mobile");
 
 burger.addEventListener("click", function () {
     slideMenu.classList.toggle("show");
@@ -16,7 +16,7 @@ window.addEventListener("scroll", function () {
 const ambulance = document.querySelector(".move");
 ambulance.addEventListener("click", function () {
     ambulance.classList.toggle("stop");
-    
+
 })
 
 //Hobby details
