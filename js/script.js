@@ -25,6 +25,7 @@ const coding = document.querySelector(".hbb2");
 const arduino = document.querySelector(".hbb3");
 const triathlon = document.querySelector(".hbb4");
 
+
 paramedic.addEventListener("click", function () {
     paramedic.classList.toggle("opacity");
 })
