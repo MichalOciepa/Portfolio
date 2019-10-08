@@ -9,8 +9,8 @@
     <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
     <title>Emergency Coding</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+    <link rel="stylesheet" href="/css3-animate-it-master/css/animations.css" type="text/css">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -44,13 +44,13 @@
                         class="fab fa-linkedin-in"></i></a></div>
             <div class="github"><a href="https://github.com/MichalOciepa"><i class="fab fa-github"></i></a></div>
         </aside>
-        <section class="home" id="home">
+        <section class="home animatedParent" id="home">
             <h1 class="clearfix">
                 <span>Web developer</span>
                 <span>Michał Ociepa</span></h1>
             <p>Let's build something great!</p>
             <div class="move"></div>
-            <button><a href="#contact"><span>Contact me</span></a></button>
+            <button class="animated shakeUp delay-2500"><a href="#contact"><span>Contact me</span></a></button>
         </section>
         <section class="about" id="about">
             <h2>About me</h2>
@@ -59,24 +59,33 @@
                 industry.I'm at the beginning of my coding path, but I still find myself in this. Thank you for your
                 visit.</p>
             <div class="hobby">
-                <div class="hbb1"></div>
-                <div class="hbb2"></div>
-                <div class="hbb3"></div>
-                <div class="hbb4"></div>
+                <div class="hbb1">
+                    <p>Paramedic</p>
+                </div>
+                <div class="hbb2">
+                    <p>Coding</p>
+                </div>
+                <div class="hbb3" >
+                    <p>Arduino</p>
+                </div>
+                <div class="hbb4">
+                    <p>Triathlon</p>
+                </div>
             </div>
 
         </section>
-        <section class="skills" id="skills">
+        <section class="skills animatedParent" id="skills">
             <h2>Skills & Experience</h2>
             <p>Main area of my expertise is front end development (client side of the web) Visit my Linkedin profile for
                 more
                 details or just contact me.</p>
-            <img src="img/imageproxy.png" alt="">
+            <img class="animated flipInX" src="img/imageproxy.png" alt="ikony html, css i javascript">
         </section>
         <section class="projects" id="projects">
             <h2>My Projects</h2>
             <h3 class="machine">I'm still working..</h3>
-            <div class="work"><img src="img/stillWorking.png" alt=""></div>
+            <div class="work"><img src="img/stillWorking.png"
+                    alt="Mężczyzna siedzący przy laptopie, pracujący nad projektem"></div>
         </section>
         <section class="contact" id="contact">
             <h2>Contact</h2>
@@ -84,6 +93,7 @@
         </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/css3-animate-it-master/js/css3-animate-it.js"></script>
     <script src="js/script.js"></script>
 </body>
 
