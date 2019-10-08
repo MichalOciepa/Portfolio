@@ -119,7 +119,7 @@ nav.desktop ul li {
 
 nav.desktop ul li a {
     flex-basis: 18%;
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
     color: #08fdd8;
@@ -257,7 +257,7 @@ a {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
     /* animation: passion 4s alternate-reverse infinite both; */
 }
 
@@ -293,7 +293,7 @@ a {
     padding: 20px 10px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0, 0, 0, .9);
     color: #ddd;
     z-index: -1;
 }
@@ -361,7 +361,11 @@ a {
     }
 }
 
-@media (min-width: 10px) {
+@media (min-width: 310px) {
+    html {
+        font-size: 14px;
+    }
+
     nav.desktop {
         display: none;
     }
@@ -369,30 +373,52 @@ a {
     .mobile {
         display: block;
     }
-}
 
-@media (min-width: 576px) {
+    header {
+        height: 30px;
+    }
+
+    .burger,
+    .logo {
+        font-size: 20px;
+    }
+
+    nav.mobile {
+        top: 30px;
+        height: 30px;
+    }
+
+    .mobile ul li {
+        padding: 5px 0;
+    }
+
+    .mobile ul li a {
+        font-size: 20px;
+    }
+
+    .home {
+        padding-top: 60px;
+    }
+
     .home p {
-        display: inline-block;
-        position: relative;
-        margin-top: 15%;
+        margin-top: 40%;
+        font-size: 15px;
     }
 
-    .home p::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #2F2F2F;
-        top: 0;
-        right: 0;
-        border-left: 2px solid #111;
-        animation: cursor 0.5s linear infinite, typing 2s steps(19) forwards 1;
+    .home h1 {
+        margin-top: 5%;
     }
 
-    .skills img {
-        margin: 0 auto;
-        width: 30%;
+    .home h1 span {
+        font-size: 25px;
+    }
+
+    .move {
+        bottom: 30%;
+    }
+
+    section {
+        padding: 60px 35px 20px 20px;
     }
 
     .work {
@@ -400,157 +426,120 @@ a {
     }
 
     .work img {
+        width: 40%;
         transform: rotateY(180deg);
-        width: 50%;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 310px) and (orientation:portrait) {}
+
+
+
+
+@media (min-width: 411px) {
     html {
-        font-size: 20px;
-    }
-
-    section {
-        padding: 120px 50px 20px 50px;
-    }
-
-    .home h1 span {
-        clear: both;
-        font-size: 40px;
-    }
-
-    .home button {
-        font-size: 20px;
-    }
-}
-
-
-@media (min-width: 992px) {
-    html {
-        font-size: 25px;
-    }
-
-    section {
-        padding: 60px 60px 20px 60px;
+        font-size: 16px;
     }
 
     .home p {
-        margin-top: 10%;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .home h1 span {
-        font-size: 60px;
+        font-size: 35px;
     }
 
-    .home button {
-        font-size: 30px;
+    .skills img {
+        margin: 5% auto;
+        width: 40%;
+    }
+}
+
+@media (min-width: 411px) and (orientation:portrait) {}
+
+@media (min-width: 576px) {
+    .home h1 {
+        margin-top: 2%;
+    }
+
+    .home p {
+        margin-top: 30%;
     }
 
     .move {
-        transform: scale(1.5);
         bottom: 25%;
-        left: 0;
+    }
+}
+
+@media (min-width: 576px) and (orientation:portrait) {}
+
+@media (min-width: 768px) {
+    header {
+        height: 60px;
     }
 
-    .stop {
-        transform: scale(1.55);
+    .burger,
+    .logo {
+        font-size: 30px;
     }
 
     nav.mobile {
-        display: none;
+        top: 60px;
+        height: 60px;
     }
 
-    header {
-        display: none;
+    .mobile ul li {
+        padding: 10px 0;
     }
 
-    nav.desktop {
-        display: block;
-    }
-}
-
-@media (min-width: 992px) and (orientation:portrait) {
-    html {
-        font-size: 30px;
+    .mobile ul li a {
+        font-size: 20px;
     }
 
-    section h2 {
-        font-size: 60px;
+    .home {
+        padding-top: 120px;
     }
 
-    section h3 {
-        font-size: 40px;
-    }
-
-    section {
-        padding: 60px 80px 20px 80px;
-    }
-
-    aside {
-        right: 2%;
+    .home h1 span {
         font-size: 50px;
     }
 
     .home p {
-        margin-top: 20%;
-        font-size: 50px;
+        margin-top: 40%;
     }
 
-    .home h1 {
-        margin-top: 20%;
+    section {
+        padding: 120px 45px 20px 30px;
     }
+}
 
-    .home h1 span {
-        font-size: 100px;
-    }
+@media (min-width: 768px) and (orientation:portrait) {}
 
-    .home button {
-        font-size: 50px;
-    }
-
-    .move {
-        transform: scale(2.5);
-    }
-
-    .stop {
-        transform: scale(2.55);
+@media (min-width: 1024px) {
+    nav.desktop {
+        display: block;
     }
 
     .mobile {
         display: none;
     }
 
-    header {
-        display: none;
-    }
-
-    nav.desktop {
-        display: block;
-    }
-
-    nav.desktop ul li a {
-        font-size: 35px;
+    section {
+        padding: 60px 45px 20px 30px;
     }
 }
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) and (orientation:portrait) {}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1280px) {}
 
+@media (min-width: 1280px) and (orientation:portrait) {}
 
-@media (min-width:1600px) {
-    .wrapper {
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-}
+@media (min-width:1600px) {}
 
-@media (max-width:320px) {
-    html {
-        font-size: 12px;
-    }
-}
+@media (min-width: 1600px) and (orientation:portrait) {}
+
+@media (max-width:320px) {}
 
 /* END MEDIA QUERIES */
 /* ANIMATIONS */
@@ -624,15 +613,18 @@ a {
     0% {
         transform: translateY(0);
     }
+
     33% {
         transform: translateY(-25%);
     }
+
     66% {
         transform: translateY(25%);
     }
 
-    100%{
+    100% {
         transform: translateY(0);
     }
 }
+
 /* END ANIMATIONS */
