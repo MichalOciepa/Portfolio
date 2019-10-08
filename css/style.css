@@ -181,6 +181,7 @@ section h2 {
     text-transform: uppercase;
     padding: 10px 20px;
     cursor: pointer;
+    animation: shake .2s 2s linear 10 both;
 }
 
 a {
@@ -247,6 +248,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 10%;
+    z-index: 1;
 }
 
 .hobby div {
@@ -255,6 +257,7 @@ a {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    
     /* animation: passion 4s alternate-reverse infinite both; */
 }
 
@@ -277,19 +280,22 @@ a {
     background-image: url('../img/triathlon.jpg');
 }
 
-.opacity {
-    opacity: .2;
+.index {
+    z-index: 0;
 }
 
 .hobby p {
     display: block;
     position: absolute;
-    top: 70%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    padding: 20px 10px;
     width: 100%;
-    background-color: black;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
     color: #ddd;
+    z-index: -1;
 }
 
 /* END HOBBY */
@@ -614,4 +620,19 @@ a {
     }
 }
 
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translateY(-25%);
+    }
+    66% {
+        transform: translateY(25%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
 /* END ANIMATIONS */
